@@ -55,34 +55,40 @@ function userLengthChoice(){
 function userChoices(){
   // set passwordCharacters to empty array so we can concat on other arrays based on user choices
   passwordCharacters = []
-  includeLower = confirm("Click Ok to include lower case letters in your password.")
-  // if user selects to include lower case concat lower case array in to passwordCharacters
-    if (includeLower) {
-      passwordCharacters = passwordCharacters.concat(lowerCaseLetters);
-    }
+  // if user hit cancel when prompted to enter desired password length, we don't want this code to execute
+  if(passwordLength !== null) {
+    includeLower = confirm("Click Ok to include lower case letters in your password.")
+    // if user selects to include lower case concat lower case array in to passwordCharacters
+      if (includeLower) {
+        passwordCharacters = passwordCharacters.concat(lowerCaseLetters);
+      }
 
-  includeUpper = confirm("Click Ok to include upper case letters in your password.")
-  // if user selects to include lower case concat upper case array in to passwordCharacters 
-    if (includeUpper) {
-      passwordCharacters = passwordCharacters.concat(upperCaseLetters);
-    }
+    includeUpper = confirm("Click Ok to include upper case letters in your password.")
+    // if user selects to include lower case concat upper case array in to passwordCharacters 
+      if (includeUpper) {
+        passwordCharacters = passwordCharacters.concat(upperCaseLetters);
+      }
 
-  includeNums = confirm("Click Ok to include numbers in your password.")
-  // if user selects to include lower case concat numbers array in to passwordCharacters 
-    if (includeNums) {
-      passwordCharacters = passwordCharacters.concat(numbers);
-    }
+    includeNums = confirm("Click Ok to include numbers in your password.")
+    // if user selects to include lower case concat numbers array in to passwordCharacters 
+      if (includeNums) {
+        passwordCharacters = passwordCharacters.concat(numbers);
+      }
 
-  includeSymbols = confirm("Click Ok to include symbols/special characters letters in your password.")
-  // if user selects to include lower case concat symbols array in to passwordCharacters 
-    if (includeSymbols) {
-      passwordCharacters = passwordCharacters.concat(symbols);
-    }
-  // if user doesn't select any, alert them, tell them to choose at least one, then start over
-    else if (!includeLower && !includeUpper && !includeNums && !includeSymbols) {
-      alert("Please choose at least one character type to include in your password.")
-      userChoices();
-    }
+    includeSymbols = confirm("Click Ok to include symbols/special characters letters in your password.")
+    // if user selects to include lower case concat symbols array in to passwordCharacters 
+      if (includeSymbols) {
+        passwordCharacters = passwordCharacters.concat(symbols);
+      }
+    // if user doesn't select any, alert them, tell them to choose at least one, then start over
+      else if (!includeLower && !includeUpper && !includeNums && !includeSymbols) {
+        alert("Please choose at least one character type to include in your password.")
+        userChoices();
+      }
+  }
+  else {
+    return;
+  }
 }
 // function to generate password
 function generatePassword() {
