@@ -34,7 +34,7 @@ function userLengthChoice(){
         return
       }
       // if user enters something other than a number, display invalid input message, start over
-      else if (passwordLength % 1 !== 0) {
+      else if (isNaN(passwordLength)) {
         alert("Invalid input, password must be a number between 8 - 128 characters")
         userLengthChoice();
       }
