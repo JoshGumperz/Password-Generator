@@ -8,24 +8,27 @@ In order to test out the generator, you'll need a device with internet connectio
 
 ## Getting Started
 
-I've included screenshots of what the site looks like and all the prompts you'll see as you go through the process of genrating password. The site is also linked below so feel free to take a look!
+I've included screenshots of what the site looks like and all the prompts you'll see as you go through the process of genrating password. The site is also linked below so feel free to take a look! 
 Upon initially loading in to the site, you will see this:
-![Screenshot](https://i.imgur.com/6FE3ng1.png)
+![Screenshot](https://i.imgur.com/ZVu5jXH.png)
 After clicking on the generate password button you'll be givien a series of prompts that look like this:
-![Screenshot](https://i.imgur.com/sHha9dX.png)
-![Screenshot](https://i.imgur.com/z5qdh20.png)
-![Screenshot](https://i.imgur.com/65mmZPX.png)
-![Screenshot](https://i.imgur.com/O8zXm1O.png)
-![Screenshot](https://i.imgur.com/4c5Ikvb.png)
+![Screenshot](https://i.imgur.com/5jB4klX.png)
+![Screenshot](https://i.imgur.com/NbysjsJ.png)
+![Screenshot](https://i.imgur.com/BRd2AWG.png)
+![Screenshot](https://i.imgur.com/6mkczTa.png)
+![Screenshot](https://i.imgur.com/Z81e07b.png)
 Finally, the password will be generated according to your choices:
-![Screenshot](https://i.imgur.com/LtuXFWe.png)
+![Screenshot](https://imgur.com/qGoW5U7)
+If you navigated the site incorrectly, you may end up seeing one of these error messages:
+![Screenshot](https://i.imgur.com/KPsKjSj.png)
+![Screenshot](https://i.imgur.com/AL9OGYU.png)
+![Screenshot](https://i.imgur.com/eyOPQQk.png)
+![Screenshot](https://i.imgur.com/PGPWMzc.png)
 
 
 
 ## Built With
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ## Deployed Link
