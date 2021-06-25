@@ -18,7 +18,7 @@ After clicking on the generate password button you'll be givien a series of prom
 ![Screenshot](https://i.imgur.com/6mkczTa.png)
 ![Screenshot](https://i.imgur.com/Z81e07b.png)
 Finally, the password will be generated according to your choices:
-![Screenshot](https://imgur.com/qGoW5U7)
+![Screenshot](https://i.imgur.com/qGoW5U7.png)
 If you were to navigate the site incorrectly, you may end up seeing one of these error messages:
 ![Screenshot](https://i.imgur.com/KPsKjSj.png)
 ![Screenshot](https://i.imgur.com/AL9OGYU.png)
