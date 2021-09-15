@@ -126,7 +126,8 @@ button[disabled] {
 }
 
 #copy-btn {
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
   height: 35px;
   border-radius: 10px;
   width: 7%;
