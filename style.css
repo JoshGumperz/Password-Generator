@@ -42,14 +42,6 @@ header {
   padding: 30px 40px;
 }
 
-.card-header::after {
-  content: " ";
-  display: block;
-  width: 100%;
-  background: #e7e9eb;
-  height: 2px;
-}
-
 .card-body {
   min-height: 100px;
 }
@@ -74,18 +66,20 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
-    0px;
+  background-color: rgb(185, 10, 10);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
   color: hsl(0, 0%, 100%);
+  text-align: center;
+  cursor: pointer;
+}
+
+#generate {
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
   padding: 14px 34px;
-  text-align: center;
-  cursor: pointer;
+  border-radius: 25px;
 }
 
 button[disabled] {
@@ -104,6 +98,13 @@ button[disabled] {
 
 .input-options {
   margin: 8px; 
+  cursor: pointer;
+}
+
+.password-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 #password-length {
@@ -122,6 +123,17 @@ button[disabled] {
   height: 35px;
   padding: 10px;
   font-size: 20px;
+}
+
+#copy-btn {
+  font-family: sans-serif;
+  height: 35px;
+  border-radius: 10px;
+  width: 7%;
+}
+
+.btn:hover {
+  background-color: rgb(168, 12, 12);
 }
 
 @media (max-width: 690px) {

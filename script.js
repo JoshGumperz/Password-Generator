@@ -5,6 +5,8 @@ var includeLower = document.querySelector("#include-lowercase")
 var includeUpper = document.querySelector("#include-uppercase")
 var includeNums = document.querySelector("#include-numbers")
 var includeSymbols = document.querySelector("#include-symbols")
+var copyBtn = document.querySelector("#copy-btn")
+var passwordText = document.querySelector("#password");
 
 // declaring all necessary variables
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
@@ -19,13 +21,13 @@ function writePassword() {
   userChoices();
 
   var password = generatePassword();
-  var passwordText = document.querySelector("#password");
   passwordText.value = password;
 
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+copyBtn.addEventListener("click", copyPassword)
 
 // function to prompt user to choose the length of their password
 function validateLength(){
@@ -87,3 +89,8 @@ function generatePassword() {
   return password;
 }
 
+function copyPassword() {
+  passwordText.select();
+  passwordText.setSelectionRange(0, 99999); /* For mobile devices */
+  navigator.clipboard.writeText(passwordText.value);
+}
