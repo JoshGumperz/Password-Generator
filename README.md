@@ -10,22 +10,22 @@ In order to test out the generator, you'll need a device with internet connectio
 
 I've included screenshots of what the site looks like and all the options available. The site is also linked below so feel free to take a look! 
 Upon initially loading in to the site, you will see this:
-![Screenshot](images\Screenshot_208.png)
+![Screenshot](https://imgur.com/Vj5ZFzG)
 
 From here you can select your desired password options. 
-![Screenshot](images\Screenshot_209.png)
+![Screenshot](https://imgur.com/432Y4MX)
 
 Finally, the password will be generated according to your choices:
-![Screenshot](images\Screenshot_210.png)
+![Screenshot](https://imgur.com/Rz5VHoR)
 
 Once the password has been generated, you can click on the copy button to copy it to your clipboard:
-![Screenshot](images\Screenshot_211.png)
+![Screenshot](https://imgur.com/VdUt5yX)
 
 If you were to navigate the site incorrectly, you may end up seeing one of these error messages:
-![Screenshot](images\Screenshot_212.png)
-![Screenshot](images\Screenshot_213.png)
-![Screenshot](images\Screenshot_214.png)
-![Screenshot](images\Screenshot_215.png)
+![Screenshot](https://imgur.com/726bf9v)
+![Screenshot](https://imgur.com/b1hl5Ms)
+![Screenshot](https://imgur.com/g7lnNNV)
+![Screenshot](https://imgur.com/dKWyYYO)
 
 
 
