@@ -9,8 +9,6 @@ var hidePassword = document.querySelector("#hide-pw")
 var copyBtn = document.querySelector("#copy-btn")
 var passwordText = document.querySelector("#password");
 
-console.log(hidePassword)
-
 // declaring all necessary variables
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 var upperCaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -83,7 +81,6 @@ function userChoices(){
 
 // toggle function for hiding/showing the password
 const setHidePassword = () => {
-  console.log('side hide password')
   if (hidePassword.checked) {
     passwordText.type = "password";
   } else {
