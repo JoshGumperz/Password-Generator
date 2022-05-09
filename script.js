@@ -5,7 +5,7 @@ var includeLower = document.querySelector("#include-lowercase")
 var includeUpper = document.querySelector("#include-uppercase")
 var includeNums = document.querySelector("#include-numbers")
 var includeSymbols = document.querySelector("#include-symbols")
-var hidePassword = document.querySelector("#hide-password")
+var hidePassword = document.querySelector("#hide-pw")
 var copyBtn = document.querySelector("#copy-btn")
 var passwordText = document.querySelector("#password");
 
