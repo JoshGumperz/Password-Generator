@@ -5,8 +5,10 @@ var includeLower = document.querySelector("#include-lowercase")
 var includeUpper = document.querySelector("#include-uppercase")
 var includeNums = document.querySelector("#include-numbers")
 var includeSymbols = document.querySelector("#include-symbols")
+var showPassword = document.querySelector("#show-password")
 var copyBtn = document.querySelector("#copy-btn")
 var passwordText = document.querySelector("#password");
+console.log(showPassword)
 
 // declaring all necessary variables
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
@@ -28,6 +30,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 copyBtn.addEventListener("click", copyPassword)
+
 
 // function to prompt user to choose the length of their password
 function validateLength(){
@@ -76,6 +79,17 @@ function userChoices(){
     alert("Please choose at least one character type to include in your password.")
   }
 }
+
+const setShowPassword = () => {
+  if (showPassword.checked) {
+    passwordText.type = "text";
+  } else {
+    passwordText.type = "password";
+  }
+}
+
+showPassword.addEventListener("click", setShowPassword)
+
 // function to generate password
 function generatePassword() {
   // store generated values in new array
