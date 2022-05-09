@@ -79,11 +79,12 @@ function userChoices(){
   }
 }
 
+// toggle function for hiding/showing the password
 const setHidePassword = () => {
-  if (!hidePassword.checked) {
-    passwordText.type = "text";
-  } else {
+  if (hidePassword.checked) {
     passwordText.type = "password";
+  } else {
+    passwordText.type = "text";    
   }
 }
 
