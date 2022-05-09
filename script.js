@@ -5,10 +5,9 @@ var includeLower = document.querySelector("#include-lowercase")
 var includeUpper = document.querySelector("#include-uppercase")
 var includeNums = document.querySelector("#include-numbers")
 var includeSymbols = document.querySelector("#include-symbols")
-var showPassword = document.querySelector("#show-password")
+var hidePassword = document.querySelector("#hide-password")
 var copyBtn = document.querySelector("#copy-btn")
 var passwordText = document.querySelector("#password");
-console.log(showPassword)
 
 // declaring all necessary variables
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
@@ -80,15 +79,15 @@ function userChoices(){
   }
 }
 
-const setShowPassword = () => {
-  if (showPassword.checked) {
+const setHidePassword = () => {
+  if (!hidePassword.checked) {
     passwordText.type = "text";
   } else {
     passwordText.type = "password";
   }
 }
 
-showPassword.addEventListener("click", setShowPassword)
+hidePassword.addEventListener("click", setHidePassword)
 
 // function to generate password
 function generatePassword() {
